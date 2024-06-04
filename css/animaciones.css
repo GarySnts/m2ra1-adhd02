@@ -1,0 +1,160 @@
+/*Animaciones*/
+.titulo{
+    color: aliceblue;
+    text-align: center;
+    margin-top: 50px;
+}
+
+body{
+    margin: 0;
+    background: rgb(46,59,64);
+background: linear-gradient(6deg, rgba(46,59,64,1) 0%, rgba(99,136,133,1) 32%, rgba(80,106,129,1) 100%);
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+footer {
+    align-items:flex-end;
+    width: 100%;
+}
+
+
+
+.suelo-m1{
+    width: 400px;
+    height: 100px;
+
+}
+.suelo-m2{
+    width: 300px;
+    height: 100px;
+    position: relative;
+    animation: mover 3s infinite;
+}
+.suelo-m3{
+    width: 300px;
+    height: 100px;
+    position: relative;
+    animation: mover 3s infinite;
+    animation-direction: reverse;
+}
+
+.suelo-m{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 100px ;
+}
+
+.suelo-m img{
+    width: 100%;
+    height: auto;
+}
+
+.pj {
+    width: 200px; 
+    position: absolute;
+    margin-bottom: 175px;
+    bottom: 500px; 
+     /* Centra el personaje horizontalmente?*/
+    animation: caminar 3s infinite, saltar 6s infinite;
+    
+}
+.cuch{
+    padding-top: 100px;
+    padding-left: 100px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+.cuchillas {
+    width: 200px; 
+    animation: girar 2s linear infinite;
+}
+
+.ave {
+    width: 100px; 
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: volar 4s linear infinite, batirAlas 0.5s steps(2) infinite;
+}
+
+
+/* keyframes*/
+
+
+@keyframes mover {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-100px);
+    }
+    50% {
+        transform: translateX(0);
+    }
+    75% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes caminar {
+    0%, 100% {
+        transform: translateX(-50px);
+    }
+    50% {
+        transform: translateX(200px);
+    }
+}
+
+@keyframes saltar {
+    0%, 10%, 20%, 30%, 40%, 50%, 100% {
+        bottom: 0;
+    }
+    15% {
+        bottom: 200px;
+    }
+    35% {
+        bottom: 200px;
+    }
+}
+@keyframes girar {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+@keyframes volar {
+    0% {
+        left: -100px;
+    }
+    100% {
+        left: calc(100% + 100px);
+    }
+}
+
+@keyframes batirAlas {
+    0% {
+        content: url('../img/R1.png');
+    }
+    50% {
+        content: url('../img/R2.png');
+    }
+    100% {
+        content: url('../img/R1.png');
+    }
+}

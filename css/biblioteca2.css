@@ -1,0 +1,66 @@
+.titulo{
+    color: aliceblue;
+    text-align: center;
+    margin-top: 50px;
+}
+.titulo2{
+    color: aliceblue;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 6rem;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.bloque{
+    background-color: red;
+    border: 2px solid cyan;
+    width: 30%;
+    height: 10%;
+}
+.bloque2{
+    background-color: rgb(0, 255, 76);
+    border: 2px solid cyan;
+    width: 10%;
+    height: 30%;
+}
+.tetris{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    flex-wrap: nowrap;
+}
+
+.texto{
+    color: aliceblue;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 36px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.numeros{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.num{
+    border: 1px solid gold;
+    width: 10%;
+    height: 10%;
+    font-size: 42px;
+    color: aquamarine;
+}
+
+.bloque3{
+    background-color: rgb(4, 0, 255);
+    border: 2px solid rgb(145, 255, 0);
+    width: 70px;
+    height: 200px;
+}

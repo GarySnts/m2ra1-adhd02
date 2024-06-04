@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #36343d;
+    font-family: Arial, sans-serif;
+}
+nav {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    box-shadow: 0 8px 12px rgba(148, 230, 255, 0.5);
+    padding: 20px;
+    text-align: center;
+}
+nav a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    margin: 10px 0;
+    font-size: 18px;
+}
+nav a:hover {
+    color: #007BFF;
+}
+.titulo{
+    margin-right: 100px;
+    color: #dbecff;
+    text-shadow: 0 4px 8px rgba(148, 230, 255, 0.5);
+}
